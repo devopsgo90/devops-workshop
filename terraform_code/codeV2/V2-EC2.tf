@@ -7,7 +7,7 @@ resource "aws_instance" "demo-server" {
     instance_type = "t2.micro"
     key_name = "dpp"
     security_groups = [ "demo-sg" ]
-    
+    tags = "Main_server"
 }
 
 resource "aws_security_group" "demo-sg" {
